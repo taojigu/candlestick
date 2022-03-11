@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+<script src="https://d14fo0winaifog.cloudfront.net/plotly-basic.js"></script>
+<html lang="en">
+    <head>
+
+    </head>
+
+    <body>
+        <div id="price">
+        </div>
+
+    </body>
+    <script type="text/javascript">
+
+        var graphs = {{line_json | safe}};
+
+        Plotly.plot('price',graphs,{});
+
+    </script>
+</html>
